@@ -54,7 +54,7 @@ correta.
   import java.util.List;
   import java.util.Scanner;
   
-  public class SistemaDeUsuarios {
+  public class SistemaDeCadastro {
 
     //Criação de classe Usuario que apresenta os atributos: nome e senha.  
       static class Usuario {
@@ -148,7 +148,11 @@ correta.
                   System.out.println("Login bem-sucedido!");
                   return user;
               }
-          }  
+          }
+          
+          System.out.print("\nErro no processo de login. As explicações mais prováveis são:\n");
+          System.out.print("(1) O nome ou a senha estão incorretos.\n");
+          System.out.print("(2) O usuário pode não ter sido cadastrado.\n");
           
           return null;
       }
